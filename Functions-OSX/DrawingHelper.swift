@@ -4,7 +4,7 @@ import SpriteKit
 let queue = DispatchQueue(label: "Drawing", attributes: [])
 var firstCommand = true
 
-func changeDelay(delay: Double) {
+func set(delay: Double) {
     queue.async { () -> Void in
         Pen.delay = delay
     }
